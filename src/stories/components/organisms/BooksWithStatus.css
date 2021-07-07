@@ -1,0 +1,12 @@
+.bookList {
+    display : flex;
+    flex : 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/* .bookList > div {
+    width : 33%;
+    flex : 1;
+} */

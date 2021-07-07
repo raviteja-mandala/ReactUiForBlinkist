@@ -1,0 +1,77 @@
+.cardContainer {
+    height : 350px;
+    width : 200px;    
+}
+
+.cardContainerFirstChild {
+    background-color: blanchedalmond;
+    height : 50%;
+
+}
+
+.cardContainerSecondChild {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 35px 20px 1fr;
+    height: 50%;
+    background-color: lightgrey;
+    grid-gap: 0px;
+    
+}
+
+
+
+
+.bookTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top : 5px;
+    margin-left : 8px;
+    margin-right : 8px;
+    /* border : 1px solid tomato; */
+}
+
+.bookAuthor {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-left : 8px;
+    margin-right : 8px;
+    margin-top : 10px;
+    /* border : 1px solid tomato; */
+}
+
+.bookDetails {
+    display : flex;
+    justify-content: space-between; 
+    /* border : 1px solid tomato;   */
+    margin-left : 8px;
+    margin-right : 8px;
+    margin-top : 5px;
+    
+}
+
+.bookDetails > div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* border : 1px solid tomato;   */
+    padding-top : 4px;
+}
+
+.timer {
+    font-size : 15px;
+    vertical-align: middle;    
+}
+
+.reads {
+    position : relative;
+}
+
+.threeDots {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size : 20px;
+}
+
