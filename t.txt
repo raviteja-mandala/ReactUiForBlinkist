@@ -1,0 +1,5 @@
+[{bookTitle : 'Heat Transfer', bookAuthor : 'Hari', min : 20,reads : '0.7k',status : 'currentlyReading'},
+{bookTitle : 'Thermodynamics', bookAuthor : 'Vijay', min : 37,reads : '2.3k', status : 'currentlyReading'},
+{bookTitle : 'Fluid Mechanics', bookAuthor : 'Rohan', min : 42,reads : '1.2k',status : 'currentlyReading'},
+{bookTitle : 'Mass Transfer', bookAuthor : 'Anand', min : 121,reads : '3.8k',status : 'finished'},
+{bookTitle : 'Process Dynamics', bookAuthor : 'Prashant', min : 20,reads : '0.7k', status : 'finished'}]

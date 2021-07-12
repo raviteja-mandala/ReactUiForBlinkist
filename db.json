@@ -1,0 +1,19 @@
+{
+
+"books" : [
+{"bookTitle" : "Heat Transfer", "bookAuthor" : "Hari", "min" : 20,"reads" : "0.7k", "status" : "currentlyReading", "image" : "book_image1.png"},
+{"bookTitle" : "Thermodynamics", "bookAuthor" : "Vijay", "min" : 37,"reads" : "2.3k", "status" : "currentlyReading" , "image" : "book_image2.png"},
+{"bookTitle" : "Fluid Mechanics", "bookAuthor" : "Rohan", "min" : 42,"reads" : "1.2k", "status" : "currentlyReading", "image" : "book_image3.png"},
+{"bookTitle" : "Mass Transfer", "bookAuthor" : "Anand", "min" : 121,"reads" : "3.8k", "status" : "finished", "image" : "book_image4.png"},
+{"bookTitle" : "Process Dynamics", "bookAuthor" : "Prashant", "min" : 20,"reads" : "0.7k", "status" : "finished", "image" : "book_image5.png"}
+],
+
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+

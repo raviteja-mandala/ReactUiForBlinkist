@@ -13,7 +13,29 @@ const useStyles = makeStyles((theme) => ({
         borderColor : 'black' 
   },
   gridItemContainerForActiveButton : {
-    borderColor: 'green'
+    borderColor: theme.palette.primary.main
+  },
+
+  bookStatusButtonActive : {
+
+    color : theme.palette.primary.main,
+    border : 'none',
+    backgroundColor: theme.bookStatusButtonColor.main,
+    marginTop : '5px',
+    marginBottom: '15px',
+    fontSize : theme.typography.fontSize.bookStatusFontSize,
+    fontWeight: 500
+  },
+
+  bookStatusButtonStyle : {
+
+    border : 'none',
+    paddingLeft: '0px',
+    backgroundColor: theme.bookStatusButtonColor.main,
+    marginTop : '5px',
+    marginBottom: '15px',
+    fontSize : theme.typography.fontSize.bookStatusFontSize,
+    fontWeight: 500
   }
 
 }));
@@ -29,7 +51,7 @@ function BookStatusButton(props) {
     return (
         <Grid item xs={4}>
             <Box borderBottom={2} className={props.buttonContainerStyles === 'gridItemContainerForInactiveButton' ? classes.gridItemContainerForInactiveButton : classes.gridItemContainerForActiveButton}>
-            <button className = {props.buttonStyles} onClick = {() => changeStatus() }>{props.children}</button>   </Box>         
+            <button className = {props.buttonStyles} onClick = {() => changeStatus()}>{props.children}</button>   </Box>         
         </Grid>
     )
 }

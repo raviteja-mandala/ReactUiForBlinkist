@@ -5,11 +5,17 @@ import App from './App';
 import BookCard from './stories/components/molecules/BookCard';
 import reportWebVitals from './reportWebVitals';
 import "@fontsource/raleway"
+import FirstComponent from './FirstComponent';
+import App3 from './App3';
+import theme from './theme'
+import { ThemeProvider } from '@material-ui/core/styles'
 
 
 
 ReactDOM.render(  
-    <App/>,
+  <ThemeProvider theme={theme}>
+    <App/>
+    </ThemeProvider>,
   document.getElementById('root')
 );
 

@@ -5,6 +5,10 @@ import './App.css';
 import BlinkistHeader from './stories/components/molecules/BlinkistHeader';
 import { makeStyles } from '@material-ui/core';
 import BooksWithStatus from './stories/components/organisms/BooksWithStatus';
+import FirstComponent from './FirstComponent';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import Highlights from './Highlights';
+import MyAccount from './MyAccount';
 
 const useStyles = makeStyles((theme) => ({
   secondSection  : {
@@ -40,9 +44,23 @@ function App() {
         >
           Learn React
         </a> */}
+        <BrowserRouter>
         <Box><BlinkistHeader/></Box>
-        <Box className={classes.secondSection}>My Library</Box>
-        <BooksWithStatus/>
+        <Switch>          
+          <Route exact path="/highlights"> 
+          <Highlights/>           
+          </Route>
+          <Route exact path="/myaccount"> 
+          <MyAccount/>            
+          </Route>
+          <Route path="/">
+          <Box className={classes.secondSection}>My Library</Box>
+          <BooksWithStatus/>
+          </Route>
+        </Switch>
+        </BrowserRouter>
+        
+        
 
         {/* <div className="blinkistbody">
           <div className="statusButtonsContainer">

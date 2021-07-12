@@ -7,7 +7,8 @@ import './BooksWithStatus.css'
 import { makeStyles } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
-
+import axios from 'axios';
+import useBooksAxios from './useBooksAxios';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -27,16 +28,19 @@ function BooksWithStatus() {
 
     const classes = useStyles();
     const [bookStatus, setBookStatus] = useState(()=>{return 'currentlyReading'});
-    var bookList = [{bookTitle : 'Heat Transfer', bookAuthor : 'Hari', min : 20,reads : '0.7k',status : 'currentlyReading'},
-{bookTitle : 'Thermodynamics', bookAuthor : 'Vijay', min : 37,reads : '2.3k', status : 'currentlyReading'},
-{bookTitle : 'Fluid Mechanics', bookAuthor : 'Rohan', min : 42,reads : '1.2k',status : 'currentlyReading'},
-{bookTitle : 'Mass Transfer', bookAuthor : 'Anand', min : 121,reads : '3.8k',status : 'finished'},
-{bookTitle : 'Process Dynamics', bookAuthor : 'Prashant', min : 20,reads : '0.7k', status : 'finished'}];
+    const url = 'http://localhost:3000/books';
+    const [bookArray, setBookArray, error, loading] = useBooksAxios(url,'get');
+    
+//     var bookList = [{bookTitle : 'Heat Transfer', bookAuthor : 'Hari', min : 20,reads : '0.7k',status : 'currentlyReading'},
+// {bookTitle : 'Thermodynamics', bookAuthor : 'Vijay', min : 37,reads : '2.3k', status : 'currentlyReading'},
+// {bookTitle : 'Fluid Mechanics', bookAuthor : 'Rohan', min : 42,reads : '1.2k',status : 'currentlyReading'},
+// {bookTitle : 'Mass Transfer', bookAuthor : 'Anand', min : 121,reads : '3.8k',status : 'finished'},
+// {bookTitle : 'Process Dynamics', bookAuthor : 'Prashant', min : 20,reads : '0.7k', status : 'finished'}];
 
-    const [bookArray, setBookArray] = useState(() => {
-        console.log('h22');
-        return bookList;
-    });
+    // const [bookArray, setBookArray] = useState(() => {
+    //     console.log('h22');
+    //     return bookList;
+    // });
     
 
 var statusButtonClick = (messageFromChildButton) => {
@@ -59,7 +63,10 @@ var changeBookStatus = (bk) => {
 }
 
     return (
-        <Box className={classes.blinkistbody}>
+        (loading) ? (
+            <p>loading...</p>
+        ) : ((bookArray !== null) ? 
+        (<Box className={classes.blinkistbody}>
           <Grid container>
           <BookStatusButton buttonStyles={ bookStatus === 'currentlyReading' ? 'bookStatusButtonActive' : 'bookStatusButtonStyle'} 
           buttonContainerStyles={ bookStatus === 'currentlyReading' ? 'gridItemContainerForActiveButton' : 'gridItemContainerForInactiveButton'}
@@ -76,8 +83,9 @@ var changeBookStatus = (bk) => {
                   }
               })}
           </Grid>            
-        </Box>
+        </Box>) : error)
+    
     )
-}
+            }
 
 export default BooksWithStatus

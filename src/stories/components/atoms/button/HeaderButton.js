@@ -1,10 +1,11 @@
 import React from 'react'
 import './HeaderButton.css';
+import { Link } from 'react-router-dom';
 
 function HeaderButton(props) {
     return (
         <div className="hButtonDiv">
-            <a href="#" className="hButton">{props.children}</a>
+            <Link to={props.tolink} className="hButton">{props.children}</Link>
         </div>
     )
 }

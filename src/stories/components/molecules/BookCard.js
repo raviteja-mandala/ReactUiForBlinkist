@@ -6,15 +6,19 @@ import { BsThreeDots } from "react-icons/bs";
 import { Button, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+import App from '../../../App';
+//import bi from '../../../../images/book_image.png';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = (props) => makeStyles((theme) => ({
     cardContainer: {
         height : '400px',
         width : '250px' 
   },
 
   cardContainerFirstChild: {
-  backgroundColor : 'blanchedalmond',
+  backgroundImage: 'url('+images[`${props.book.image}`].default+')',//${props.book.location}
+  backgroundRepeat : 'no-repeat',
+  backgroundSize : '100% 100%',
   height : '60%',
   width : '100%'
   },
@@ -38,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     /* border : 1px solid tomato; */
 },
 timer: {
-    fontSize : 15,
+    fontSize : theme.typography.fontSize.cardIconsFont,
     verticalAlign: 'middle',    
 },
 mins: {
@@ -64,7 +68,7 @@ mins: {
 reads: {
     position : 'relative',
     height : '100px',
-    fontSize : 13,
+    fontSize : theme.typography.fontSize.reads,
     textAlign : 'right',
     paddingRight : 15
 },
@@ -72,9 +76,21 @@ reads: {
   
 }));
 
+
+function importAll(r) {
+	let images = {};
+  r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+  alert(images);
+  console.log(images);
+	return images
+}
+
+const images = importAll(require.context('../../../../images', false, /\.(png|jpe?g|svg)$/));
+
+
 const  BookCard = (props) =>  {
 
-    const classes = useStyles();
+    const classes = useStyles(props)();
 
     const [status, setStatus] = useState(()=>{return 'finished'});
 
