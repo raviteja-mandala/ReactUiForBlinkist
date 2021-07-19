@@ -9,6 +9,7 @@ import FirstComponent from './FirstComponent';
 import App3 from './App3';
 import theme from './theme'
 import { ThemeProvider } from '@material-ui/core/styles'
+import MyAccount from './MyAccount';
 
 
 

@@ -25,10 +25,9 @@ const useStyles = makeStyles((theme) => ({
 
 function BooksWithStatus() {
 
-
     const classes = useStyles();
     const [bookStatus, setBookStatus] = useState(()=>{return 'currentlyReading'});
-    const url = 'http://localhost:3000/books';
+    const url = 'http://localhost:3000/userBooks';
     const [bookArray, setBookArray, error, loading] = useBooksAxios(url,'get');
     
 //     var bookList = [{bookTitle : 'Heat Transfer', bookAuthor : 'Hari', min : 20,reads : '0.7k',status : 'currentlyReading'},
@@ -47,19 +46,44 @@ var statusButtonClick = (messageFromChildButton) => {
     setBookStatus(messageFromChildButton);
 }
 
+var removeFromLibrary = (bk) => {
+    const requestOptions = {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' }
+    };
+    fetch('http://localhost:3000/userBooks/'+bk.id, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            setBookArray([...bookArray.filter(item => item.id !== bk.id)]);
+        });
+}
+
 var changeBookStatus = (bk) => {
+    var updatedStatus=bk[status];
     for(let i=0; i<bookArray.length;i++){
-        if(bookArray[i].bookTitle === bk.bookTitle){
+        if(bookArray[i].id === bk.id){
             
             if(bookArray[i].status === 'currentlyReading'){
                 bookArray[i].status = 'finished';
+                updatedStatus = 'finished';
             }else{
                 bookArray[i].status = 'currentlyReading';
+                updatedStatus = 'currentlyReading';
             }
             break;
         }
     }
-    setBookArray([...bookArray]);
+    const requestOptions = {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status : updatedStatus })
+    };
+    fetch('http://localhost:3000/userBooks/'+bk.id, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            setBookArray([...bookArray]);
+        });
+    
 }
 
     return (
@@ -77,9 +101,10 @@ var changeBookStatus = (bk) => {
           </Grid>
           <Grid container className={classes.container}>
               {bookArray.map((book) => {
-                //   alert(book.bookTitle+" "+book.status);
                   if(book.status === bookStatus){
-                      return <Grid item xs={4}><BookCard book={book} onchangestate = { (bk) => {changeBookStatus(bk)}} ></BookCard></Grid> 
+                      return <Grid item xs={4}><BookCard book={book} myLibrary={true}                       
+                      onremove = {(bk) => {removeFromLibrary(bk)}} 
+                      onchangestate = { (bk) => {changeBookStatus(bk)}} ></BookCard></Grid> 
                   }
               })}
           </Grid>            

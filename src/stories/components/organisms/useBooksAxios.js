@@ -8,11 +8,10 @@ const useBooksAxios = (url,method) => {
     const [response, setResponse] = useState([]);
     const [error, setError] = useState('');
     const [loading, setloading] = useState(true);
-
+    
     const fetchData = () => {
         setTimeout(() => {axios[method](url)// JSON.parse(headers), JSON.parse(body))
-            .then((res) => {      
-                         
+            .then((res) => {                          
                 setResponse(res.data);
             })
             .catch((err) => {                
@@ -25,10 +24,10 @@ const useBooksAxios = (url,method) => {
     };
 
 
-    useEffect(() => {
-       
+    useEffect(() => {       
         fetchData();
     }, [method, url]);
+
     return [ response, setResponse, error, loading ];
 };
 
