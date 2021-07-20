@@ -1,0 +1,7 @@
+organization=raviteja-mandala
+projectKey=raviteja-mandala_ReactUiForBlinkist
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.21909
+dashboardUrl=https://sonarcloud.io/dashboard?id=raviteja-mandala_ReactUiForBlinkist
+ceTaskId=AXrDus5LLn5Sgm2u08LJ
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXrDus5LLn5Sgm2u08LJ

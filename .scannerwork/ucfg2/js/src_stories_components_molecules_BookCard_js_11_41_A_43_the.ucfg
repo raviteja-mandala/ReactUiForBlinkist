@@ -1,0 +1,560 @@
+
+;src_stories_components_molecules_BookCard_js_11_41_A_43_theT
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js( (4"s3_1*†T
+s3_1
+<synthetic> (us
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+	%object_0Object"Objectã
+à
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+
+	%object_0Object"
+height"__id*	
+400pxä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+
+	%object_0Object"
+width"__id*	
+250pxâ
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ("
+
+	%object_0Object"
+	marginTop"__id*2
+us
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+	%object_1Object"Objectâ
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ("
+
+	%object_1Object"
+	marginTop"__id*2us
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js !(
+	%object_2Object"Objectî
+ë
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js   ((
+
+	%object_2Object"
+backgroundColor"__id*	
+greenus
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js "(
+	%object_3Object"Objectä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+
+	%object_3Object"
+color"__id*	
+whiteè
+å
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ( 
+
+	%object_3Object"	
+padding"__id*
+
+5px 10pxå
+â
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (!
+
+	%object_3Object"
+
+fontSize"__id*
+10pxà
+Ö
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (
+
+	%object_3Object"
+width"__id*
+60%ï
+í
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ((
+
+	%object_3Object"
+backgroundColor"__id*
+
+purpleå
+â
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js (%
+
+	%object_3Object"
+borderRadius"__id*2
+â
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ("
+
+	%object_3Object"
+	marginTop"__id*2å
+â
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ( 
+
+	%object_3Object"	
+display"__id*	
+blockò
+ï
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js !( 
+
+	%object_3Object"	
+&:hover"__id*
+
+	%object_2Objectus
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js$ &(
+	%object_4Object"Objectã
+à
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js% %( 
+
+	%object_4Object"	
+display"__id*
+noneI
+G
+
+__unknown_file (
+	%sc-P_9_0"__id**
+
+%env"
+
+%scope-P_9S
+Q
+
+__unknown_file (
+%sc-A_42_pro_0"__id**
+
+%env"
+%scope-A_42_proL
+J
+
+__unknown_file (	
+%expr_0"__id**
+
+%sc-A_42_pro_0"
+propsD
+B
+
+__unknown_file (	
+%expr_1"__id**
+	
+%expr_0"
+bookH
+F
+
+__unknown_file (	
+%expr_2"__id**
+
+	%sc-P_9_0"
+imagesâ
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(7
+%fieldAccess_0"__id**
+	
+%expr_1"
+imageé
+ã
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(7
+%var_0"__mapGet*
+	
+%expr_2*
+
+%fieldAccess_0ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(?
+%fieldAccess_1"__id**
+
+%var_0"	
+defaulté
+ã
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(?
+	%concat_0"__concat*
+url(*
+
+%fieldAccess_1Ü
+É
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(C
+	%concat_1"__concat*
+
+	%concat_0*
+)us
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js( .(
+	%object_5Object"Objectò
+ï
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js) )(C(
+
+	%object_5Object"
+backgroundImage"__id*
+
+	%concat_1ô
+ñ
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js* *( )
+
+	%object_5Object"
+backgroundRepeat"__id*
+	no-repeató
+î
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js+ +('
+
+	%object_5Object"
+backgroundSize"__id*
+	100% 100%â
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js, ,(
+
+	%object_5Object"
+height"__id*
+60%â
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js- -(
+
+	%object_5Object"
+width"__id*
+100%us
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js0 6(
+	%object_6Object"Objectà
+Ö
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js1 1(!
+
+	%object_6Object"
+
+fontSize"__id*2ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js2 2(#
+
+	%object_6Object"
+
+marginLeft"__id*2ã
+à
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js3 3($
+
+	%object_6Object"
+marginRight"__id*2ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js4 4(
+
+	%object_6Object"
+height"__id*
+20pxê
+ç
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js5 5(&
+
+	%object_6Object"
+verticalAlign"__id*
+topus
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js8 @(
+	%object_7Object"Objectà
+Ö
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js9 9(!
+
+	%object_7Object"
+
+fontSize"__id*2é
+ã
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js: :(#
+
+	%object_7Object"
+
+fontWeight"__id*
+boldâ
+Ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js; ;("
+
+	%object_7Object"
+	marginTop"__id*2ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js< <(#
+
+	%object_7Object"
+
+marginLeft"__id*2ã
+à
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js= =($
+
+	%object_7Object"
+marginRight"__id*2ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js> >(
+
+	%object_7Object"
+height"__id*
+35pxH
+F
+
+__unknown_file (	
+%expr_3"__id**
+
+theme"
+
+typographyH
+F
+
+__unknown_file (	
+%expr_4"__id**
+	
+%expr_3"
+
+fontSizeus
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsA D(
+	%object_8Object"Object¢
+ü
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsB B(6!
+
+	%object_8Object"
+
+fontSize"__id**
+	
+%expr_4"
+cardIconsFontì
+ê
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsC C(&
+
+	%object_8Object"
+verticalAlign"__id*
+
+middleus
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsE H(
+	%object_9Object"Objectà
+Ö
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsF F(!
+
+	%object_9Object"
+
+fontSize"__id*2ã
+à
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsG G($
+
+	%object_9Object"
+paddingLeft"__id*2vt
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsJ N(
+
+%object_10Object"Objectä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsK K( 
+
+
+%object_10Object"
+height"__id*
+40%ä
+á
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsL L(
+
+
+%object_10Object"
+width"__id*
+100%ô
+ñ
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsM M(#)
+
+
+%object_10Object"
+backgroundColor"__id*
+	lightgreyH
+F
+
+__unknown_file (	
+%expr_5"__id**
+
+theme"
+
+typographyH
+F
+
+__unknown_file (	
+%expr_6"__id**
+	
+%expr_5"
+
+fontSizevt
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsR V(
+
+%object_11Object"Objectõ
+ò
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsS S(."
+
+
+%object_11Object"
+
+fontSize"__id**
+	
+%expr_6"
+readsè
+å
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsT T(#
+
+
+%object_11Object"
+	textAlign"__id*	
+rightç
+ä
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsU U(&
+
+
+%object_11Object"
+paddingRight"__id*2vt
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js4 Y(
+
+%object_12Object"Objectü
+ú
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ('
+
+
+%object_12Object"
+cardContainer"__id*
+
+	%object_0Object°
+û
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js ()
+
+
+%object_12Object"
+buttonContainer"__id*
+
+	%object_1Objectù
+ö
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js "(%
+
+
+%object_12Object"
+colorButton"__id*
+
+	%object_3Objectú
+ô
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js$ &($
+
+
+%object_12Object"
+
+hideButton"__id*
+
+	%object_4Object©
+¶
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js( .(1
+
+
+%object_12Object"
+cardContainerFirstChild"__id*
+
+	%object_5Objectú
+ô
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js0 6($
+
+
+%object_12Object"
+
+bookAuthor"__id*
+
+	%object_6Objectõ
+ò
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js8 @(#
+
+
+%object_12Object"
+	bookTitle"__id*
+
+	%object_7Objectï
+í
+R
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsA D(
+
+
+%object_12Object"
+timer"__id*
+
+	%object_8Objectî
+ë
+R
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsE H(
+
+
+%object_12Object"
+mins"__id*
+
+	%object_9Object´
+®
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsJ N(2
+
+
+%object_12Object"
+cardContainerSecondChild"__id*
+
+
+%object_10Objectñ
+ì
+R
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.jsR V(
+
+
+%object_12Object"
+reads"__id*
+
+
+%object_11Object"n
+T
+J/home/ravitm/Documents/my-app/src/stories/components/molecules/BookCard.js4 Y(
+
+
+%object_12Object:
+%env:
+themeB 

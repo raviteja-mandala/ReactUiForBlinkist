@@ -1,26 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import BookCard from './stories/components/molecules/BookCard';
-import reportWebVitals from './reportWebVitals';
-import "@fontsource/raleway"
-import FirstComponent from './FirstComponent';
-import App3 from './App3';
-import theme from './theme'
-import { ThemeProvider } from '@material-ui/core/styles'
-import MyAccount from './MyAccount';
+import "@fontsource/raleway";
+import { ThemeProvider } from "@material-ui/core/styles";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import theme from "./theme";
 
-
-
-ReactDOM.render(  
+ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <App/>
-    </ThemeProvider>,
-  document.getElementById('root')
+    <App />
+  </ThemeProvider>,
+  document.getElementById("root")
 );
-
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
